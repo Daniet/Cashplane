@@ -54,8 +54,9 @@ exit;
 	
 		var ventana = document.getElementById('formularios');
 		
-		
+		ventana.style.background="white";
 		ventana.src = 'http://www.andmarod.com/hackathon/'+ruta+'.php';
+		
 		
 		
 		
@@ -188,9 +189,9 @@ exit;
       <div class='bar'></div>
       <div class='swanky_wrapper__content'>
         <ul>
-          <li>Cajeros</li>
+          <li  onclick="llamar_form('dashboard/cajero')">Cajeros</li>
           <li>Sucursales</li>
-          <li>Centros de Efectivo</li>
+          <li>Bancos Externos</li>
           <li>Cajeros Externos</li>
           
         </ul>
@@ -225,6 +226,7 @@ exit;
         <ul>
           <li onclick="llamar_form('ubicacion_cajeros')">Ubicacion geografica</li>
           <li onclick="llamar_form('dashboard/grafica_general')">Estado General</li>
+          <li onclick="llamar_form('dashboard/dashboard')">Dash</li>
           
         </ul>
       </div>
@@ -244,10 +246,10 @@ exit;
         </ul>
       </div>
     </label>
-    <input id='Config' name='radio' type='radio'/>
-    <label for='Config'>
+    <input id='watson' name='radio' type='radio'/>
+    <label for='watson'>
       <img src='../PROGRAMAS/PRSTMARO/iconos/set.png'/>
-      <span>Configuración</span>
+      <span>Informes Watson</span>
       <div class='lil_arrow'></div>
       <div class='bar'></div>
       <div class='swanky_wrapper__content'>
@@ -268,7 +270,7 @@ exit;
   
   <div style="position:absolute;top:10%;left:30%;width:65%;height:85%; border-style:none">
   
-  	<iframe id="formularios" style="width:100%;height:100%;border-style:none"  ></iframe>
+  	<iframe id="formularios" style="width:100%;height:100%;border-style:none;"  ></iframe>
   
   </div>
     

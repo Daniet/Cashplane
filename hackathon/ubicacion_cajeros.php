@@ -72,7 +72,7 @@ $contador=$contador + 1;
   <head>
   
     <script type="text/javascript">
-  setTimeout ("document.location = 'http://www.andmarod.com/hackathon/ubicacion_cajeros.php'",10000);
+  setTimeout ("document.location = 'http://www.andmarod.com/hackathon/ubicacion_cajeros.php'",60000);
 
   
   </script>
